@@ -1,1 +1,0 @@
-# generalded.github.io
