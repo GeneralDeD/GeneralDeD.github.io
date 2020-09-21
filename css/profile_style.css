@@ -1,0 +1,2002 @@
+body {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    background-color: #F8F8FA;
+    font-size: 16px;
+    color: #12114A;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+     text-decoration: underline;
+    color: #00CF4D;
+}
+
+.green {
+    color: #00CF4D;
+}
+
+.gold {
+    color: #FFC107;
+}
+
+.gold__back {
+    color: #3A3889;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #FFC107;
+}
+
+.select {
+    display: none;
+}
+
+.dis {
+    display: none;
+}
+
+.container_ded {
+    width: 88.99%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.head__back {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+
+.container__left {
+    width: 66.5%;
+}
+
+.container__right {
+    width: 30.5%;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.letcop__logo img {
+    width: 49px;
+    transition: all .2s ease;
+}
+
+.nav__items {
+    display: flex;
+    align-items: center;
+}
+
+.sub_menu {
+    width: max-content;
+}
+
+.sub_menu a {
+    margin-top: 10px;
+}
+
+.nav__item {
+    margin: 0 30px;
+    color: #fff;
+}
+
+#nav {
+    position: relative;
+}
+
+#sub_menu {
+    position: absolute;
+    left: -55%;
+    
+}
+
+#nav_ye {
+    position: relative;
+}
+
+#sub_menu_ye {
+    position: absolute;
+    left: -75%;
+}
+
+.notification_items {
+    display: flex;
+    height: fit-content;
+}
+
+.not__item {
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 45px;
+}
+
+.bell {
+    position: relative;
+    color: #FF8CB2;
+}
+
+.bell:hover {
+    color: #FF8CB2;
+}
+
+.bell i {
+    transition: all .2s ease;
+}
+
+.bell i:hover{
+    text-shadow: 0 0 10px #FF8CB2;
+}
+
+.bell__count {
+    position: absolute;
+    top: 13%;
+    left: 31%;
+    
+    font-size: 16px;
+    color: #3A3889;
+}
+
+.comm {
+    position: relative;
+    color: #00CF4D;
+}
+
+.comm:hover {
+    color: #00CF4D;
+}
+
+.comm i:hover{
+    text-shadow: 0 0 10px #00CF4D;
+}
+
+.comm__count {
+    position: absolute;
+    top: 13%;
+    left: 33%;
+    
+    font-size: 16px;
+    color: #3A3889;
+}
+
+.profile {
+    height: 54px; //временно;
+    display: flex;
+    align-items: center;
+}
+
+.lang {
+    height: fit-content;
+    position: relative;
+    color: #fff;
+}
+
+#sub_menu_lang{
+    width: auto;
+    position: absolute;
+}
+
+#sub_menu_lang a {
+    margin: 0;
+}
+
+/* Person */
+
+.person {
+    width: 100%;
+    margin: 33px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 8px 12px;
+    
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s ease;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #00CF4D; 
+    border: 1px solid #00CF4D;
+    color: #12114A;
+    box-shadow: 0 0 10px #00CF4D;
+}
+
+.btn-blue {
+    color: #12114A;
+    border: 1px solid #12114A;
+}
+
+.btn-blue:hover {
+    border: 1px solid #00CF4D; 
+}
+
+.btn-lg {
+    padding: 10px 38px;
+}
+
+.btn-right {
+    margin: 0 20px;
+}
+
+.user__photo-gold {
+    padding: 3px;
+    border: 3px solid #FFC107;
+    border-radius: 50%;
+}
+
+.user__photo-silver {
+    padding: 3px;
+    border: 3px solid silver;
+    border-radius: 50%;
+}
+
+/* Место для добавления стилей для статусов */
+
+.onlineHead {
+    position: relative;
+}
+
+.online {
+    position: absolute;
+    top: 68%;
+    left: 78%;
+    
+    width: 8px;
+    height: 8px;
+    background-color: #00CF4D;
+    font-size: 60px;
+    
+    border: 2px solid #ffffd6;
+    border-radius: 50%;
+}
+
+.nick {
+    margin-left: 20px;
+    
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.person__about {
+    margin: 0 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.person__about p{
+    margin: 0;
+    margin-top: 8px;
+    
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.full__name {
+    font-size: 30px;
+}
+
+.level {
+    text-align: right;
+}
+
+.level__head {
+    margin-bottom: 13px;
+    font-size: 24px;
+}
+
+.stars {
+    margin-left: 23px;
+    color: #EFEFEF;
+}
+
+.review__stars {
+    color: #B1B1B3;
+}
+
+
+/* Experience */
+
+.experience {
+    width: 90%;
+    margin: 11% auto 0;
+}
+
+.experience__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience__title {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.exp__icon {
+    padding: 10px 20px;
+    border-radius: 13px;
+}
+
+.exp__load {
+    width: 100%;
+    height: 7px;
+    margin-top: 23px;
+    position: relative;
+    background-color: #fff;
+    
+    border-radius: 20px;
+}
+
+.exp__proc {
+    width: 60%;
+    height: 7px;
+    font-size: 0;
+    color: #FFC107;
+    position: absolute;
+    
+    border-radius: 20px;
+}
+
+
+/* About__user */
+
+.section {
+    margin: 20.5px 0;
+    padding: 25px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.about__user__title {
+    width: 100%;
+}
+
+.view__all {
+    width: fit-content;
+    color: #12114A;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: right;
+}
+
+.view__all:hover {
+    text-decoration: underline;
+}
+
+/* Award */
+
+.awards {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.award__item {
+    display: flex;
+}
+
+.award__text {
+    margin-left: 18px;
+    
+    color: #12114A;
+}
+
+.award__head {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* Progress */
+.section__back {
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F8F8FA;
+    border-radius: 10px;
+    padding: 15px 0 10px 25px;
+    margin: 40px 0 15px;
+    color: #12114A;
+    font-size: 14px;
+}
+
+.head {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.progress__items {
+    width: 96%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress__item {
+    padding: 15px 22px;
+    text-align: center;
+    transition: all .2s ease;
+    border-radius: 10px;
+    border: 1px solid #F8F8FA;
+}
+
+.progress__item:hover {
+    border: 1px solid #00CF4D;
+    
+}
+
+.progress__item-next {
+    color: #12114A;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.progress__item-next:hover {
+    text-decoration: none;
+}
+
+.progress__item-next p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Works */
+
+.works {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.works__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.works__item {
+    width: 178px;
+    height: 138px;
+    margin-top: 35px;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #BBB;
+}
+
+/* Reviews */
+
+.reviews {
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewed {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.reviewed__user__photo {
+    height: fit-content;
+    position: relative;
+}
+
+.reviewed__user__online {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 68%;
+    left: 78%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #00CF4D;
+}
+
+.reviewed__user {
+    padding: 0 20px;
+    font-size: 12px;
+}
+
+.reviewed__user__about {
+    margin-bottom: 10px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewed__user__name {
+    font-size: 18px;
+}
+
+.reviewed__user__name p {
+    font-size: 12px;
+}
+
+.review__message {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fa-calendar-alt {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.fa-clock {
+    margin-left: 18px;
+    margin-right: 8px;
+}
+
+ /* Right block */ 
+.right__block {
+    margin-top: 24px;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.right__block:last-child {
+    background-color: #F8F8FA;
+}
+
+.right__head {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.ver__item {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13.3px;
+    font-weight: 600;
+}
+
+.ver__item span i {
+    font-size: 20px;
+}
+
+.fa-check-circle {
+    color: #00CF4D;
+}
+
+.red {
+    color: #FF8CB2;
+}
+
+.red:hover {
+    color: #FF8CB2;
+}
+
+/* Special */
+
+.special {
+    margin-top: 20px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.special__item {
+    font-size: 13px;
+    color: #12114A;
+    text-decoration: underline;
+}
+
+ /* Similar */
+.similar {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.similar__item {
+    width: fit-content;
+    margin: 10px 0;
+    padding: 2px 5px;
+    border: 1px solid #B1B1B3;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+
+.similar__item:hover {
+    border: 1px solid #00CF4D; 
+    background-color: #00CF4D; 
+}
+
+.similar__item a {
+    font-size: 13px;
+    color: #12114A;
+}
+
+.similar__item a:hover {
+    text-decoration: none;
+}
+
+ /* Result */ 
+.result {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #12114A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.result:hover {
+    color: #00CF4D;
+    text-decoration: underline;
+}
+
+.result__title {
+    font-size: 14px;
+}
+
+/* Social */
+
+.social {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.social a i{
+    font-size: 30px;
+    color: #B1B1B3;
+    transition: all .2s ease;
+}
+
+.social a i:hover {
+    color: #00CF4D;
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+.footer {
+    background: url(../img/footer.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.container_ded:last-child {
+    margin: 0 auto;
+}
+
+.footer__item {
+    margin: 20px 0;
+}
+
+.footer__item:first-child a:hover {
+   text-decoration: none;
+    color: #fff;
+}
+
+.letcop__com {
+    max-width: fit-content;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 165%;
+    font-weight: 700;
+}
+
+#letcop_com {
+    width: 34%;
+}
+
+#investonse {
+    width: 100%;    
+}
+
+.olymp p{
+    font-size: 83%;
+}
+
+.footer__item__head {
+    margin: 10px 0 20px;
+    font-weight: 600;
+}
+
+.item__list {
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.soc-end a{
+    margin-right: 15px;
+}
+
+.soc-end a i{
+    color: #fff;
+}
+
+
+
+@media (max-width: 4000px) {
+    body {
+        font-size: 23px;
+    }
+    
+    .letcop__logo img {
+        width: 70px;
+    }
+    
+    .not__item {
+        font-size: 42px;
+    }
+    
+    .bell__count, .comm__count {
+        font-size: 24px;
+    }
+    
+    .nick {
+        font-size: 50px;
+    }
+    
+    .btn {
+        padding: 18px 26px;
+        font-size: 16px;
+    }
+    
+    .person__about p {
+        font-size: 21px;
+    }
+    
+    .full__name {
+        font-size: 38px;
+    }
+    
+    .level__head {
+        font-size: 37px;
+    }
+    
+    .experience__title {
+        font-size: 37px;
+    }
+    
+    .gold__back {
+        font-size: 19px;
+    }
+    
+    .section {
+        font-size: 21px;
+    }
+    
+    .view__all {
+        font-size: 19px;
+    }
+    
+    .section__back {
+        font-size: 21px;
+    }
+    
+    .head {
+        font-size: 37px;
+    }
+    
+    .progress__item-next {
+        font-size: 29px;
+    }
+    
+    .progress__item-next p{
+        font-size: 20px;
+    }
+    
+    .works__item {
+        width: 250px;
+        height: 180px;
+    }
+    
+    .reviewed__user {
+        font-size: 19px;
+    }
+    
+    .reviewed__user__name {
+        font-size: 25px;
+    }
+    
+    .reviewed__user__name p {
+        font-size: 19px;
+    }
+    
+    .review__message {
+        font-size: 22px;
+    }
+    
+    .ver__item {
+        font-size: 18px;
+    }
+    
+    .special__item {
+        font-size: 20px;
+    }
+    
+    .special {
+        margin-top: 10px;
+    }
+    
+     .similar__item a {
+        font-size: 20px;
+    }
+    
+    .result {
+        font-size: 20px;
+    } 
+    
+    .result__title {
+        font-size: 18px;
+    }
+    
+    .social a i {
+        font-size: 38px;
+    }
+    
+    .item__list {
+        font-size: 22px;
+    }
+}
+
+
+
+@media (max-width: 2056px) {
+    body {
+        font-size: 20px;
+    }
+    
+    .letcop__logo img {
+        width: 60px;
+    }
+    
+    .not__item {
+        font-size: 35px;
+    }
+    
+    .bell__count, .comm__count {
+        font-size: 20px;
+    }
+    
+    .nick {
+        font-size: 46px;
+    }
+    
+    .btn {
+        padding: 15px 22px;
+        font-size: 14px;
+    }
+    
+    .person__about p {
+        font-size: 18px;
+    }
+    
+    .full__name {
+        font-size: 34px;
+    }
+    
+    .level__head {
+        font-size: 32px;
+    }
+    
+    .experience__title {
+        font-size: 32px;
+    }
+    
+    .gold__back {
+        font-size: 16px;
+    }
+    
+    .section {
+        font-size: 18px;
+    }
+    
+    .view__all {
+        font-size: 16px;
+    }
+    
+    .section__back {
+        font-size: 18px;
+    }
+    
+    .head {
+        font-size: 34px;
+    }
+    
+    .progress__item-next {
+        font-size: 26px;
+    }
+    
+    .progress__item-next p{
+        font-size: 17px;
+    }
+    
+    .works__item {
+        width: 220px;
+        height: 160px;
+    }
+    
+    .reviewed__user {
+        font-size: 16px;
+    }
+    
+    .reviewed__user__name {
+        font-size: 22px;
+    }
+    
+    .reviewed__user__name p {
+        font-size: 16px;
+    }
+    
+    .review__message {
+        font-size: 19px;
+    }
+    
+    .ver__item {
+        font-size: 15.3px;
+    }
+    
+    .special__item {
+        font-size: 17px;
+    }
+    
+    .special {
+        margin-top: 10px;
+    }
+    
+     .similar__item a {
+        font-size: 17px;
+    }
+    
+    .result {
+        font-size: 18px;
+    } 
+    
+    .result__title {
+        font-size: 16px;
+    }
+    
+    .social a i {
+        font-size: 34px;
+    }
+    
+    .item__list {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 1600px) {
+    body {
+        font-size: 18px;
+    }
+    
+    .letcop__logo img {
+        width: 54px;
+    }
+    
+    .not__item {
+        font-size: 30px;
+    }
+    
+    .bell__count, .comm__count {
+        font-size: 18px;
+    }
+    
+    .nick {
+        font-size: 43px;
+    }
+    
+    .btn {
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+    
+    .person__about p {
+        font-size: 16px;
+    }
+    
+    .full__name {
+        font-size: 32px;
+    }
+    
+    .level__head {
+        font-size: 28px;
+    }
+    
+    .experience__title {
+        font-size: 28px;
+    }
+    
+    .gold__back {
+        font-size: 14px;
+    }
+    
+    .section {
+        font-size: 16px;
+    }
+    
+    .view__all {
+        font-size: 14px;
+    }
+    
+    .section__back {
+        font-size: 16px;
+    }
+    
+    .head {
+        font-size: 32px;
+    }
+    
+    .progress__item-next {
+        font-size: 24px;
+    }
+    
+    .progress__item-next p{
+        font-size: 15px;
+    }
+    
+    .works__item {
+        width: 190px;
+        height: 140px;
+    }
+    
+    .reviewed__user {
+        font-size: 14px;
+    }
+    
+    .reviewed__user__name {
+        font-size: 20px;
+    }
+    
+    .reviewed__user__name p {
+        font-size: 14px;
+    }
+    
+    .review__message {
+        font-size: 17px;
+    }
+    
+    .ver__item {
+        font-size: 14.3px;
+    }
+    
+    .special__item {
+        font-size: 15px;
+    }
+    
+    .special {
+        margin-top: 15px;
+    }
+    
+     .similar__item a {
+        font-size: 15px;
+    }
+    
+    .result {
+        font-size: 17px;
+    } 
+    
+    .result__title {
+        font-size: 15px;
+    }
+    
+    .social a i {
+        font-size: 32px;
+    }
+    
+    .item__list {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1366px) {
+    body {
+        font-size: 16px;
+    }
+    
+     .letcop__logo img {
+        width: 49px;
+    }
+    
+    .not__item {
+        font-size: 25px;
+    }
+    
+    .bell__count, .comm__count {
+        font-size: 16px;
+    }
+    
+    .nick {
+        font-size: 40px;
+    }
+    
+    .btn {
+        padding: 9px 14px;
+        font-size: 12px;
+    } 
+    
+    .person__about p {
+        font-size: 14px;
+    }
+    
+    .full__name {
+        font-size: 30px;
+    }
+    
+    .level__head {
+        font-size: 24px;
+    }
+    
+    .experience__title {
+        font-size: 24px;
+    }
+    
+    .gold__back {
+        font-size: 12px;
+    }
+    
+    .section {
+        font-size: 14px;
+    }
+    
+    .view__all {
+        font-size: 12px;
+    }
+    
+    .section__back {
+        font-size: 14px;
+    }
+    
+    .head {
+        font-size: 30px;
+    }
+    
+    .progress__item-next {
+        font-size: 22px;
+    }
+    
+    .progress__item-next p{
+        font-size: 13px;
+    }
+    
+    .works__item {
+        width: 178px;
+        height: 138px;
+    }
+    
+    .reviewed__user {
+        font-size: 12px;
+    }
+    
+    .reviewed__user__name {
+        font-size: 18px;
+    }
+    
+    .reviewed__user__name p {
+        font-size: 12px;
+    }
+    
+    .review__message {
+        font-size: 15px;
+    }
+    
+    .ver__item {
+        font-size: 13.3px;
+    }
+    
+    .special__item {
+        font-size: 13px;
+    }
+    
+    .special {
+        margin-top: 20px;
+    }
+    
+    .similar__item a {
+        font-size: 13px;
+    }
+    
+    .result {
+        font-size: 16px;
+    }
+    
+    .result__title {
+        font-size: 14px;
+    }
+    
+    .social a i {
+        font-size: 30px;
+    }
+    
+    .item__list {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 1150px) {
+    body {
+        font-size: 14px;
+    }
+    
+     .letcop__logo img {
+        width: 45px;
+    }
+    
+    .not__item {
+        font-size: 22px;
+    }
+    
+    .bell__count, .comm__count {
+        font-size: 14px;
+    }
+    
+    .nick {
+        font-size: 37px;
+    }
+    
+    .btn {
+        padding: 8px 12px;
+        font-size: 11px;
+    } 
+    
+    .person__about p {
+        font-size: 12px;
+    }
+    
+    .full__name {
+        font-size: 28px;
+    }
+    
+    .level__head {
+        font-size: 22px;
+    }
+    
+    .experience__title {
+        font-size: 20px;
+    }
+    
+    .gold__back {
+        font-size: 10px;
+    }
+    
+    .section {
+        padding: 15px;
+        font-size: 12px;
+    }
+    
+    .view__all {
+        font-size: 11px;
+    }
+    
+    .award__text {
+        margin-left: 8px;
+    }
+    
+    .section__back {
+        padding: 15px 0px 9px 18px;
+        font-size: 12px;
+    }
+    
+    .head {
+        font-size: 26px;
+    }
+    
+    .progress__item {
+        padding: 0;
+    }
+    
+    .progress__item-next {
+        font-size: 19px;
+    }
+    
+    .progress__item-next p{
+        font-size: 12px;
+    }
+    
+    .works__item {
+        width: 150px;
+        height: 110px;
+    }
+    
+    .reviewed__user {
+        font-size: 10px;
+    }
+    
+    .reviewed__user__name {
+        font-size: 16px;
+    }
+    
+    .reviewed__user__name p {
+        font-size: 10px;
+    }
+    
+    .review__message {
+        font-size: 12px;
+    }
+    
+    .right__block {
+        padding: 15px 22px;
+    }
+    
+    .ver__item {
+        font-size: 11px;
+    }
+    
+    .ver__item span i {
+        font-size: 18px;
+    }
+    
+    .special__item {
+        font-size: 11px;
+    }
+    
+    .special {
+        margin-top: 18px;
+    }
+    
+    .similar__item a {
+        font-size: 11px;
+    }
+    
+    .result {
+        font-size: 13px;
+    }
+    
+    .result__title {
+        font-size: 12px;
+    }
+    
+    .social a i {
+        font-size: 25px;
+    }
+    
+    .item__list {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 990px) {
+    body {
+        line-height: 1.5em;
+        font-size: 15px;
+    }
+    
+    .container_ded {
+        width: 98%;
+    }
+    
+    .container__left, .container__right {
+        width: 100%;
+        position: relative;
+    }
+    
+    .disNon {
+        display: none;
+    }
+    
+    .dis {
+        display: block;
+    }
+    
+    .select {
+        display: block;
+    }
+    
+    .header {
+        margin-top: 11px;
+        margin-bottom: 15px;
+    }
+    
+    /* BURGER MENU */
+        
+    .navbar__mov-active {
+        width: 90%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 0 20px #6F6BFF;
+        border-bottom-right-radius: 10px;
+        color: #fff;
+        background-color: #12114A;
+    }
+    
+    .navbar__mob__item {
+       width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    
+    .burger {
+        position: absolute;
+        top: 14px;
+        left: 3%;
+        font-size: 14px;
+    }
+    
+    .fa-times-circle {
+       font-size: 22px;   
+    }
+    
+    .user {
+        margin-top: 30px;
+       display: flex;
+        align-items: flex-end;
+    }
+    
+    .onlineHead__mob {
+        margin-right: 10px;
+        position: relative;
+    }
+    
+    .user__photo-gold__nav {
+        width: 65%;
+    }
+    
+    .online__mob__nav {
+        width: 7px;
+        height: 7px;
+        position: absolute;
+        top: 63%;
+        left: 70%;
+        
+    }
+    
+    .user__info {
+        text-align: left;
+    }
+    
+    .exp__load__mob {
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+     
+    .level__head__mob {
+        font-size: 16px;
+    }
+    
+    .nav__blocks {
+        width: 100%;
+        margin: 2px 0;
+        padding: 5px 0;
+        padding-right: 20px;
+        text-align: right;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #3A3789;
+    }
+    
+    .blocks {
+        text-align: left;
+    }
+    
+    .menu__blocks {
+        margin-right: 13%;
+    }
+    
+    .fin__blocks {
+        margin-right: -0.5%;
+    }
+    
+    .prof__blocks {
+        margin-right: 1%;
+    }
+    
+    .spanMenu {
+        margin-left: 51.3%;
+    }
+    
+    .spanFin {
+        margin-left: 47%;
+    }
+    
+    .spanProf {
+        margin-left: 47.4%;
+    }
+    
+    .nav__blocks:hover {
+        color: #6F6BFF;
+    }
+    
+    #menuBlock {
+        margin-top: 10px;
+    }
+    
+    .nav__blocks:last-child {
+        margin-bottom: 0;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .lang {
+        width: 100%;
+    }
+    
+    .lang {
+        font-weight: 600;
+        color: #6F6BFF;
+    }
+    
+    .lang__item {
+        margin-right: 2.1%;
+        color: inherit;
+    }
+    
+    .last__nav {
+        margin-right: 15px;
+    }
+    
+    .exit {
+        margin-left: 35.7%;
+    }
+    
+    .people__blocks {
+        position: absolute;
+        overflow: hidden;
+        height: auto;
+        top: 25%;
+        left: 120%;
+    }
+    
+    .also__blocks {
+        position: absolute;
+        overflow: hidden;
+        height: auto;
+        top: 0%;
+        left: 120%;
+    }
+    
+    
+    
+    
+    /* END OF BURGER MENU */
+    
+    
+    /* NOTIFIC */
+    
+    .bell__count {
+        top: -1px;
+    }
+    
+    .comm__count {
+        top: -1px;
+    }
+    
+    .not__item:last-child {
+        margin-right: 20px;
+    }
+    
+/*     END OF NOTIFIC */
+    
+    
+    /* AFTER HEADER */
+    .person__about__mob {
+        margin-top: 50px;
+        position: relative;
+        background-color: #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align: center;
+    }
+    
+    .onlineHead {
+        position: absolute;
+        top: -18%;
+        left: 46%;
+    }
+    
+    .level__head {
+        margin: 0;
+        position: absolute;
+        top: -25%;
+        left: 2%;
+        color: #fff;
+    }
+    
+    .exp__title {
+        position: absolute;
+        top: -12%;
+        left: 2%;
+        font-size: 15px;
+        color: #fff;
+    }
+    
+    .profile__edit {
+        position: absolute;
+        top: 3%;
+        right: -3%;
+        color: grey;
+        font-size: 25px;
+    }
+    
+    .place {
+        position: absolute;
+        top: 0%;
+        left: 2%;
+        text-align: left;
+    }
+    
+    .exp__in {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    .person__mob {
+        padding-top: 42px;
+    }
+    
+    .stars-head {
+        margin: 0;
+        font-size: 15px;
+    }
+    
+    .nick {
+        margin: 0;
+        margin-top: 5px;
+        font-size: 20px;
+        color: inherit;
+    }
+    
+    .full__name {
+        font-size: 18px;
+    }
+    
+    .profession {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    /* END OF AFTER HEADER */
+    
+    .awards {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .section {
+        margin: 0;
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    
+    
+    /* ДОСТИЖЕНИЯ СЛАЙДЕР */
+    
+    .progress__item-next {
+        font-size: 40px;
+    }
+    
+    
+    
+    /* КОНЕЦ ДОСТИЖЕНИЯ СЛАЙДЕР */
+    
+    
+    
+    /* FOOTER */
+    
+    .footer__item {
+        margin: 0;
+        margin-top: 7px;
+        padding: 10px 0;
+        padding-left: 32%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        
+        background-color:  #12114A;
+    }
+    
+    .footer__item:first-child {
+        padding: 0;
+        padding-top: 10px;
+        justify-content: space-around;
+        background-color: #fff;
+        margin-bottom: 0;
+        
+    }
+    
+    .blocks_fr {
+        margin-top: 5px;
+        text-align: center;
+        
+    }
+    
+    .fr__item {
+        width: 100%;
+        color: #12114A;
+        font-weight: 600;
+    }
+    
+    .fr__line {
+        margin: 5px 0;
+        border-bottom: 1px solid #12114A;
+    }
+    
+    .logo__mob {
+        width: 30%;
+    }
+    
+    #aboutServiceBlock {
+        position: relative;
+    }
+    
+    #chevronAbSv {
+        position: absolute;
+        top: 29%;
+        right: 10px;
+    }
+    
+    #forUsersBlock {
+        position: relative;
+    }
+    
+    #chevronForUsers {
+        position: absolute;
+        top: 29%;
+        right: 10px;
+    }
+    
+     #hpBlock {
+        position: relative;
+    }
+    
+    #chevronHp {
+        position: absolute;
+        top: 29%;
+        right: 10px;
+    }
+    
+    #scBlock {
+        position: relative;
+    }
+    
+    #chevronSc {
+        position: absolute;
+        top: 29%;
+        right: 10px;
+    }
+    
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social a {
+        margin-right: 60px;
+        color: #12114A;
+    }
+    
+    .social a:last-child {
+        margin: 0;
+    }
+    
+    .social a:hover {
+        color: #00CF4D;
+    }
+    
+    .social a i {
+        color: inherit;
+        font-size: 30px;
+    }
+
+    .copy {
+        line-height: 1.8em;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 770px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .footer__item {
+        margin-top: 5px;
+        padding: 8px 0;
+        padding-left: 32%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer__item {
+        margin-top: 6px;
+        padding: 6px 0;
+        padding-left: 32%;
+        font-size: 14px;
+    }
+}
+
+
+
+/* СТИЛИ ДЛЯ СЛАЙДЕРОВ*/
+
+#block-for-slider {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#viewport {
+    width: 100%;
+    height: 145px;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+
+#slidewrapper, #slidewrapper ul, #slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+#prev-btn, #next-btn {
+    position: absolute;
+    top: 28px;
+    width: 50px;
+    height: 50px;
+    background-color: #F8F8FA;
+    border-radius: 50%;
+     /* top: calc(50% - 25px); */
+}
+
+#prev-btn:hover, #next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 20px;
+}
+
+#next-btn {
+    right: 20px;
+}
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+.active__green__back {
+    background-color: #00CF4D;
+}
