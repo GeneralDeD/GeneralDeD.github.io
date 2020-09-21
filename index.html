@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,39 +11,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/9b3dd6a50b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css"> 
+    
+    <link rel="stylesheet" href="css/profile_style.css"> 
 </head>
+
 <body>
     
-       <div class="container">
+       <div class="container_ded">
          
           <div class="head__back">
-            <img src="img/back.jpg" width="100%" alt="back">
+            <img src="img/back.jpg" width="100%" alt="">
            </div>
            
               <header class="header">
-               <div class="navbar">
+              
+               <div class="navbar disNon">
                   
-                   <a href="#" class="letcop__logo">
-                       <img width="49px" src="img/logo.svg" alt="Letcop logo">
-                   </a>
-                   
                    <div class="nav__items" >
-                           <a href="#" class="nav__item">Заказы</a>
-                           <a href="#" class="nav__item">Вакансии</a>
+                          
                            
-                          <div id="nav" class="nav__item">
-                           Люди <i id="chevron" class="fas fa-chevron-down"></i>
+                           <div class="nav__items">
+                              
+                               <div class="nav__item"> 
+                                   <a href="#" class="letcop__logo">
+                                       <img src="img/logo.svg" alt="Letcop logo">
+                                   </a>
+                               </div>
+                              
+                               <div>
+                                   <a href="#" class="nav__item">Заказы</a>
+                               </div>
+                               
+                               <div>
+                                   <a href="#" class="nav__item">Вакансии</a>
+                               </div>
+                           
+                          <div class="nav__item">
+                          
+                              <select class="select" name="" id="">
+                                  <option value="#" disabled>Люди</option>
+                                  <option value="#">Все Исполнители</option>
+                                  <option value="#">Все Команды</option>
+                                  <option value="#">Оффлайн специалисты</option>
+                              </select>
+                          
+                            <div id="nav" class="disNon">
+                               Люди <i id="chevron" class="fas fa-chevron-down"></i>
                                <div id="sub_menu" class="sub_menu" style="display: none">
                                    <a href="#" class="nav__item">Все Исполнители</a> <br>
                                    <a href="#" class="nav__item">Все Команды</a> <br>
                                    <a href="#" class="nav__item">Оффлайн специалисты</a> <br>
 
                                </div>
+                            </div>
+                            
                           </div>
                           
-                          <div id="nav_ye" class="nav__item">
-                           Еще<i id="chevron" class="fas fa-chevron-down"></i>
+                          <div class="nav__item">
+                          
+                              <select class="select" name="" id="">
+                                  <option value="#" disabled>Еще</option>
+                                  <option value="#">База знаний</option>
+                                  <option value="#">Новости</option>
+                                  <option value="#">Форум</option>
+                                  <option value="#">Блог</option>
+                              </select>
+                              
+                          <div id="nav_ye" class="disNon">
+                           Еще <i id="chevron" class="fas fa-chevron-down"></i>
                                <div id="sub_menu_ye" class="sub_menu" style="display: none">
                                    <a href="#" class="nav__item">База знаний</a> <br>
                                    <a href="#" class="nav__item">Новости</a> <br>
@@ -51,20 +87,119 @@
 
                                </div>
                           </div>
+                          </div>
+                          
+                          <div>
+                              <select class="select" name="" id="">
+                                  <option value="#" >RU</option>
+                                  <option value="#">UZ</option>
+                                  <option value="#">EN</option>
+                              </select>
+                              
+                          </div>
                            
+                           </div>
                            
                    </div> <!-- nav__items -->
                    
             </div> <!-- navbar -->
             
+            <div id="navMob" class="navbar__mob dis">
+                <div class="burger">
+                    <i id="burgerIcon" class="fas fa-bars fa-2x green"></i>
+                </div>
+                
+                <div id="navMobItem" class="navbar__mob__item" style="display: none;">
+                    <div class="user">
+                        <div class="onlineHead__mob">  
+                                 <a href="#" > <img src="img/User.png" alt="Photo" class="user__photo-gold user__photo-gold__nav"> </a>
+
+                                 <div id="online" class="online online__mob__nav"></div>
+                        </div>
+
+                        <div class="user__info">
+
+                            <h6 id="nickName" class="nick">Hamillioner</h6>
+                            <p id="expIcon" class="exp__in gold">GOLD</p>
+                            <div style="display: flex; align-items: baseline">
+                                <div id="expLoad" class="exp__load exp__load__mob">
+                                  <div id="expProc" class="exp__proc gold__back "></div>
+                                </div> 
+                                <div class="level__head__mob" style="display: flex; justify-content: space-between"><span id="lvl">1</span> Lvl</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div id="menuBlock" class="nav__blocks">МЕНЮ <span class="spanMenu"><i id="chevronMenu" style="cursor: pointer" class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div id="menu__blocks" class="blocks menu__blocks" style="overflow: hidden; height: 0; position: relative">
+                     
+                      <a href="#" class="menu__item">Заказы</a><br>
+                      <a href="#" class="menu__item">Вакансии</a><br>
+                      
+                      <div id="peopleBlock" class="menu__item">Люди <span><i id="chevronPep" style="cursor: pointer" class="fas fa-chevron-right"></i></span>
+                      </div>
+                      <div id="people__blocks" class="blocks people__blocks" style="overflow: hidden; width: 0; height: 0">
+                          <a href="#" class="menu__item">Все исполнители</a><br>
+                          <a href="#" class="menu__item">Все заказы</a><br>
+                          <a href="#" class="menu__item">Оффлайн специалисты</a>
+                      </div>
+                      
+                      <div id="alsoBlock" class="menu__item">Еще <span><i id="chevronAl" style="cursor: pointer" class="fas fa-chevron-right"></i></span>
+                      </div>
+                      <div id="also__blocks" class="blocks also__blocks" style="overflow: hidden; width: 0; height: 0">
+                          <a href="#" class="menu__item">База знаний</a><br>
+                          <a href="#" class="menu__item">Новости</a><br>
+                          <a href="#" class="menu__item">Форум</a> <br>
+                          <a href="#" class="menu__item">Блог</a>
+                      </div>
+                      
+                      
+                    </div>
+                    
+                    <div id="finBlock" class="nav__blocks">ФИНАНСЫ <span class="spanFin"><i id="chevronFin" style="cursor: pointer" class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div id="fin__blocks" class="blocks fin__blocks" style="overflow: hidden; height: 0">
+                      <a href="#" class="menu__item">История переводов</a><br>
+                      <a href="#" class="menu__item">Тарифы</a><br>
+                      <a href="#" class="menu__item">Платные услуги</a><br>
+                      <a href="#" class="menu__item">Реферальная программа</a>
+                     </div>
+                    
+                    <div id="profBlock" class="nav__blocks">ПРОФИЛЬ <span class="spanProf"><i id="chevronProf" style="cursor: pointer" class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div id="prof__blocks" class="blocks prof__blocks" style="overflow: hidden; height: 0">
+                      <a href="#" class="menu__item">Вкладки</a><br>
+                      <a href="#" class="menu__item">Мои заявки</a><br>
+                      <a href="#" class="menu__item">Творческая мастерская</a><br>
+                      <a href="#" class="menu__item">Уровни и достижения</a><br>
+                    </div>
+                    
+                    <div id="langMob" class="lang">
+                        <span class="lang__item">Язык</span>
+                        <a class="lang__item" style="color: #fff">RU</a>
+                        <a href="#" class="lang__item">UZ</a>
+                        <a href="#" class="lang__item">EN</a>
+                    </div>
+                    
+                    <div class="nav__blocks">
+                        <a href="#" class="last__nav green">Продвигать</a>
+                        <a href="#" class="last__nav exit">Выход <i class="fas fa-sign-out-alt"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            
             <div class="notification_items">
                        <a href="#" class="not__item bell"><i class="fas fa-bell"></i><div id="bell_count" class="bell__count">2</div></a>
                        <a href="#" class="not__item comm"><i class="fas fa-comment"></i><div id="comm_count" class="comm__count">2</div></a>
+                       <a href="#" class="not__item comm dis" title="Друзья"><i class="fas fa-user-friends"></i></a>
             </div> <!-- notification_items -->
             
-            <div class="profile">
+            <div class="profile disNon">
                    <div id="lang" class="lang">
-                               RU<i id="chevron" class="fas fa-chevron-down"></i>
+                               RU <i id="chevron" class="fas fa-chevron-down"></i>
                                    <div id="sub_menu_lang" class="sub_menu"  style="display: none">
                                        <a href="#" class="nav__item">EN</a> <br>
                                        <a href="#" class="nav__item">UZ</a>
@@ -80,7 +215,7 @@
                
               </header>
               
-              <div class="person">
+              <div class="person disNon">
                    
                     <div class="leftSide">
                          <div class="onlineHead">  
@@ -99,28 +234,85 @@
               </div> <!-- person -->
               
         <div class="container__left">
-          <div class="person__about">
-                      <div>
-                          <p> <span id="face">Частное</span> лицо: <span id="proffesion" class="green">Юрист - 21 год</span></p>
-                          <p><span id="fullName" class="full__name">Тимур Касымов</span> <span id="national" class="national">UZ</span> <span id="location" class="location">Ташкент</span></p>
-                          <p> <span id="len">3</span> года на сервисе | <span id="email">googlemail@ukr.com</span> | <span id="phone">+998 ** *** ** 23</span></p>
-                      </div>
-                      
-                      <div class="level">
-                          <h1 class="level__head"><span id="lvl">1</span> Lvl</h1>
-                          <p> <span id="reviewsCount">20</span> отзывов
-                              <span class="stars">
-                                  <span class="star star-ft gold"><i class="fas fa-star"></i></span>
-                                  <span class="star star-sd gold"><i class="fas fa-star"></i></span>
-                                  <span class="star star-td gold"><i class="fas fa-star"></i></span>
-                                  <span class="star star-fh gold"><i class="fas fa-star"></i></span>
-                                  <span class="star star-fv"><i class="fas fa-star"></i></span>
+          <div class="person__about disNon"> <!-- ПОСЛЕДНЕЕ ИЗМЕНЕНИЕ ТУТ -->
+             
+              <div>
+                  <p> <span id="face">Частное</span> лицо: <span id="proffesion" class="green">Юрист - 21 год</span></p>
+                  <p>
+                      <span id="fullName" class="full__name">Тимур Касымов</span> 
+                      <span class="place">
+                          <span id="national" class="national">UZ</span> 
+                          <span id="location" class="location">Ташкент</span>
+                      </span>
+                  </p>
+                  <p> <span id="len">3</span> года на сервисе | <span id="email">googlemail@ukr.com</span> | <span id="phone">+998 ** *** ** 23</span></p>
+              </div>
 
-                              </span>
-                          </p> 
-                      </div>
-                      
-                  </div>
+              <div class="level">
+                  <h1 class="level__head"><span id="lvl">1</span> Lvl</h1>
+
+                  <h2 class="exp__title dis">Опыт <span id="expCount">30</span> из 50</h2>
+                  <span id="expIcon" class="exp__in gold__back dis">GOLD</span>
+
+                  <p> <span id="reviewsCount">20</span> отзывов
+                      <span class="stars stars-head">
+                          <span class="star star-ft gold"><i class="fas fa-star"></i></span>
+                          <span class="star star-sd gold"><i class="fas fa-star"></i></span>
+                          <span class="star star-td gold"><i class="fas fa-star"></i></span>
+                          <span class="star star-fh gold"><i class="fas fa-star"></i></span>
+                          <span class="star star-fv"><i class="fas fa-star"></i></span>
+
+                      </span>
+                  </p> 
+              </div>
+
+        </div>
+                 
+                 
+        <div class="dis person__about__mob"> <!-- Мобильная версия ТУТ -->
+             
+                         <div class="onlineHead">  
+                             <a href="#" > <img src="img/User.png" alt="Photo" class="user__photo-gold"> </a>
+
+                             <div id="online" class="online"></div>
+                         </div>
+                         
+                         <h2 class="level__head"><span id="lvl">1</span> Lvl</h2>
+                         <h2 class="exp__title"><span id="expCount">30</span> из 50</h2>
+                         <a href="#" class="not__item profile__edit"><i class="fas fa-user-edit"></i></a>
+                         <span class="place">
+                             <span id="expIcon" class="exp__in gold">GOLD</span> <br>
+                         
+                            <span id="national" class="national">UZ</span> 
+                            <span id="location" class="location">Ташкент</span>
+                         </span>
+                             
+              <div class="person__mob">
+                 
+                 <span class="stars stars-head">
+                          <span class="star star-ft gold"><i class="fas fa-star"></i></span>
+                          <span class="star star-sd gold"><i class="fas fa-star"></i></span>
+                          <span class="star star-td gold"><i class="fas fa-star"></i></span>
+                          <span class="star star-fh gold"><i class="fas fa-star"></i></span>
+                          <span class="star star-fv"><i class="fas fa-star"></i></span>
+
+                </span>
+                <h1 id="nickName" class="nick">Hamillioner</h1>
+                <p>Участник команды: <a href="#" id="groupName" class="green">БОБРЫ</a></p> 
+                <p id="fullName" class="full__name">Тимур Касымов</p>   
+                <p id="proffesion" class="profession green">Юрист</p>
+                  
+                  
+                  <p> 
+                      <span id="email">googlemail@ukr.com</span> | <span id="phone">+998 ** *** ** 23</span>
+                  </p>
+                  <p>
+                      <span id="projectsNum">75</span> успешных проектов | <span id="reviewsCount">20</span> отзывов
+                  </p>
+              </div>
+
+                            
+        </div>
                   
                   <div class="section">
                       
@@ -168,11 +360,11 @@
                       </div>
                   </div> <!-- about__user -->
                   
-                  <div class="section__back">
+                  <div class="section__back disNon">
                       <h2 class="head">
                           Достижения
                       </h2>
-                      <div class="progress__items">
+                      <div class="progress__items disNon">
                           <div class="progress__item">
                               <img src="img/progress__item.png" alt="progress">
                               <p>За что?</p>
@@ -202,7 +394,67 @@
                               <p>Смотреть <br> все</p>
                           </a>
                       </div>
+                      
                   </div> <!-- progress -->
+                  
+                  <!-- Достижения моб -->
+                  
+                  <div id="block-for-slider" class="dis">
+                    <div id="viewport">
+                        <ul id="slidewrapper">
+                            <li class="slide">
+                                        <div style="display: flex; justify-content: center">
+                                             <div style="margin: 0 60px"><img src="img/progress__item.png" width="50px" alt="progress" class="slide-img">
+                                              <p>За что?</p></div>
+                                              <div style="margin: 0 60px"><img src="img/progress__item.png" width="50px" alt="progress" class="slide-img">
+                                              <p>За что?</p></div>
+                                              <div style="margin: 0 60px"><img src="img/progress__item.png" width="50px" alt="progress" class="slide-img">
+                                              <p>За что?</p></div>
+                                        </div>
+                            </li>
+
+                            <li class="slide">
+                                         <div style="display: flex; justify-content: center">
+                                             <div style="margin: 0 60px"><img src="img/progress__item.png" width="50px" alt="progress" class="slide-img">
+                                              <p>За что?</p></div>
+                                              <div style="margin: 0 60px"><img src="img/progress__item.png" width="50px" alt="progress" class="slide-img">
+                                              <p>За что?</p></div>
+                                              <div style="margin: 0 60px"><img src="img/progress__item.png" width="50px" alt="progress" class="slide-img">
+                                              <p>За что?</p></div>
+                                        </div>
+                            </li>
+
+                            <li class="slide">
+                                        <div style="display: flex; justify-content: center">
+                                             <div style="margin: 0 60px"><img src="img/progress__item.png" width="50px" alt="progress" class="slide-img">
+                                              <p>За что?</p></div>
+                                              <div style="margin: 0 60px"><img src="img/progress__item.png" width="50px" alt="progress" class="slide-img">
+                                              <p>За что?</p></div>
+                                              <div style="margin: 0 60px; padding-top: 20px"><a href="#" class="progress__item progress__item-next">
+                                                  + <span id="progress__item__next">9</span> 
+                                                  <p>Смотреть <br> все</p>
+                                              </a>
+                                              </div>
+                                        </div>
+                            </li>
+
+                        </ul>
+
+                        <div id="prev-next-btns">
+                            <div id="prev-btn"><i style="font-size: 18px; position: absolute; top: 16px; left: 18px" class="fas fa-chevron-left"></i></div>
+                            <div id="next-btn"><i style="font-size: 18px; position: absolute; top: 16px; left: 21px" class="fas fa-chevron-right"></i></div>
+                        </div>
+
+                        <ul id="nav-btns">
+                            <li class="slide-nav-btn active__green__back"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                        </ul>
+                    </div>
+                 </div>
+    
+                  
+                  <!-- Достижения моб -->
                   
                   <div class="section">
                       <div class="works">
@@ -324,7 +576,7 @@
            </div> <!-- container__left -->
            
            <div class="container__right">
-              <div class="experience">
+              <div class="experience disNon">
                   <div class="experience__head">
                       <h2 class="experience__title">Опыт <span id="expCount">30</span> из 50</h2>
                       <span id="expIcon" class="exp__icon gold__back">GOLD</span>
@@ -438,16 +690,16 @@
     
     <!-- Footer -->
     
-    <footer class="footer">
+    <footer class="footer disNon">
         
-        <div class="container">
+        <div class="container_ded">
             <div class="footer__item">
                 <a href="#" class="letcop__com">
-                    <img width="49px" src="img/logo.svg" alt="Letcop.com">
+                    <img src="img/logo.svg" id="letcop_com" alt="Letcop.com">
                     <div>LETCOP <p style="font-weight: 400"> group </p></div>
                 </a>
                 <a href="#" class="letcop__com">
-                    <img src="img/light%20INVESTONSE.svg" class="investonse" alt="INVESTONSE">
+                    <img src="img/light%20INVESTONSE.svg" class="investonse" id="investonse" alt="INVESTONSE">
                 </a>
                 <a href="#" class="olymp">
                     <img src="img/olymp_trade.svg" alt="Olymp Trade">
@@ -497,12 +749,75 @@
         
     </footer>
     
+    <!-- Мобильный футер -->
+    
+    <div class="footer__mob dis"> 
+        
+        <div class="footer__item">
+               <a href="#" class="logo__mob">
+                    <img src="img/olymp_mob.png" width="100%" alt="Olymp Trade">
+                </a>
+                <a href="#" class="logo__mob">
+                    <img src="img/investonse_mob.png" class="investonse" id="investonse" alt="INVESTONSE">
+                </a>
+        </div>
+        
+        <div id="aboutServiceBlock" class="footer__item">О сервисе <span class="spanFin"><i id="chevronAbSv" style="cursor: pointer" class="fas fa-chevron-down"></i></span>
+            </div>
+            <div id="aboutServiceBlocks" class="blocks_fr" style="overflow: hidden; height: 0">
+              <a href="#" class="fr__item">О компании</a>
+              <div class="fr__line"></div>
+              <a href="#" class="fr__item">Контакты</a>
+            </div>
+            
+        <div id="forUsersBlock" class="footer__item">Пользователям <span class="spanFin"><i id="chevronForUsers" style="cursor: pointer" class="fas fa-chevron-down"></i></span>
+            </div>
+            <div id="forUsersBlocks" class="blocks_fr" style="overflow: hidden; height: 0">
+              <a href="#" class="fr__item">Тарифы</a>
+              <div class="fr__line"></div>
+              <a href="#" class="fr__item">Фриланс заказы</a>
+              <div class="fr__line"></div>
+              <a href="#" class="fr__item">Архив заказов</a> 
+              <div class="fr__line"></div>
+              <a href="#" class="fr__item">Реферальная программа</a> 
+            </div>
+            
+        <div id="hpBlock" class="footer__item">Помощь <span class="spanFin"><i id="chevronHp" style="cursor: pointer" class="fas fa-chevron-down"></i></span>
+            </div>
+            <div id="hpBlocks" class="blocks_fr" style="overflow: hidden; height: 0">
+              <a href="#" class="fr__item">Помощь</a>
+              <div class="fr__line"></div>
+              <a href="#" class="fr__item">Правила сервиса</a>
+              <div class="fr__line"></div>
+              <a href="#" class="fr__item">Служба поддержки</a> 
+            </div>
+            
+            <div id="scBlock" class="footer__item">Социальные сети <span class="spanFin"><i id="chevronSc" style="cursor: pointer" class="fas fa-chevron-down"></i></span></div>
+            <div id="scBlocks" class="blocks_fr social" style="overflow: hidden; height: 0">
+              <a href="https://www.facebook.com/letcopcom" target="_blank"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/letcop/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://t.me/letcop" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+              <a href="https://www.youtube.com/channel/UCUsrbBhYrHi9tguALYINWfA?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+                <p class="copy">&copy; Letcop 2020</p>      
+                                   
+    </div>
+    
+    <!-- Мобильный футер -->
+    
     
     
     <!-- Footer -->
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/script.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+	<script src="js/profile_script.js"></script>
 	<script>
 		$('article').readmore({
 			maxHeight: 90,
@@ -510,6 +825,33 @@
 			lessLink: '<a href="#"  class="view__all">Свернуть <i id="chevron" class="fas fa-chevron-up"></i></a>'
 		});
 	</script>
+    
+    <script>
+            $(document).ready(function(){
+	           $('.select').change(function(){
+               window.location.href = $(this).val();
+	           });
+                let visible = false
+              $('.burger').click(function(){
+                  
+                 if(!visible)
+                 { 
+                     $('#navMob').attr('class','navbar__mov-active'); 
+                     visible = true; 
+                     $('#burgerIcon').attr('class', 'fas fa-times-circle green');
+                     $('#navMobItem').show();
+                     $('.burger').css('top','16px')
+                 }
+                  else {
+                    $('#navMob').attr('class','navbar__mov dis'); 
+                    visible = false;
+                    $('#burgerIcon').attr('class', 'fas fa-bars fa-2x green');
+                    $('#navMobItem').hide();
+                    $('.burger').css('top','14px');
+                  }
+              })
+            });
+    </script>
     
 </body>
 </html>
